@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSC Admission Study Tracker - Focus Flow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2><i class="fas fa-book-open"></i> Subjects</h2>
+            <div id="subject-list" class="subject-grid">
+                </div>
+            
+            <div class="daily-stats">
+                <h3><i class="fas fa-chart-line"></i> Today's Focus</h3>
+                <p>Total Time: <span id="daily-total-time">00:00:00</span></p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="timer-card">
+                <h1 id="active-subject">Select a Subject to Start</h1>
+                
+                <div class="timer-display">
+                    <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+                
+                <div class="timer-controls">
+                    <button id="start-pause-btn" class="control-btn primary" disabled>
+                        <i class="fas fa-play"></i> Start
+                    </button>
+                    <button id="stop-btn" class="control-btn danger" disabled>
+                        <i class="fas fa-stop"></i> Stop & Save
+                    </button>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <h2><i class="fas fa-history"></i> Recent Sessions</h2>
+                <div id="session-log" class="session-log">
+                    <p>No sessions logged today.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
